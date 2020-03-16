@@ -27,6 +27,9 @@ header {
     margin: 3em auto;
     text-align: center;
 }
+header h1 {
+    font-size: 20px;
+}
 main {
     max-width: 80%;
     margin: 0 auto 3em;
