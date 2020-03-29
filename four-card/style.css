@@ -21,7 +21,7 @@ body {
 }
 header {
     max-width: 500px;
-    margin: 40px auto;
+    margin: 60px auto 80px;
     text-align: center;
 }
 header h1:first-child {
@@ -31,7 +31,7 @@ p {
     color: var(--grayishBlue);
 }
 main {
-    max-width: 90%;
+    max-width: 81%;
     margin: 0 auto;
     display: grid;
     gap: 20px;
