@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* A cada 1rem será considerado 10px */
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
+}
+a {
+    color: hsl(223, 87%, 63%);
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.wrapper, header, main, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+header {
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+}
+header .image {
+    margin-bottom: 30px;
+}
+header h1 span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+header h5 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+main #form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main #form .input-control{
+    display: flex;
+    width: 38%;
+    position: relative;
+}
+main #form .input-control input{
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 1px solid hsl(223, 100%, 88%);
+    color: #000;
+    font-size: 1.4rem;
+}
+main #form .input-control input::placeholder {
+    color: hsl(223, 100%, 88%);
+    font-size: 1.4rem;
+}
+main #form .input-control .error {
+    border: 1px solid hsl(354, 100%, 66%);
+}
+main #form .input-control small {
+    position: absolute;
+    bottom: -25px;
+    left: 5%;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    font-size: 1.4rem;
+    opacity: 0;
+}
+main #form #form-btn {
+    width: 17%;
+    margin-left: 2%;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0px 2px 4px 2px rgba(21,61,161,0.19);
+}
+
+main .graphic {
+    width: 100%;
+    margin: 70px 0;
+}
+main .graphic img {
+    width: 100%;
+}
+footer {
+    color: hsl(0, 0%, 59%);
+    width: 100%;
+}
+footer .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+footer .socials a {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(223, 100%, 88%);
+    margin: 0 20px 50px;
+    border-radius: 50%;
+    transition: all .4s;
+}
+footer .socials a:hover {
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+    color: #fff;
+}
+footer p {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 675px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header h5 {
+        font-size: 1.4rem;
+    }
+    #form {
+        flex-direction: column;
+    }
+    main #form .input-control {
+        width: 80%;
+    }
+
+    main #form .input-control small {
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    main #form #form-btn {
+        width: 80%;
+        margin-top: 7%;
+    }
+    main .graphic {
+        width: 80%;
+    }
+    footer p {
+        font-size: 1.5rem;
+    }
+}
