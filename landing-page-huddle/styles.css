@@ -10,7 +10,7 @@
 
 body {
     font: 400 16px 'Open Sans', 'Poppins', sans-serif;
-    background-image: url('./assets/images/bg-mobile.svg');
+    background-image: url('./images/bg-mobile.svg');
     background-color: hsl(257, 40%, 49%);
     background-repeat: no-repeat;
     color: #fff;
@@ -101,7 +101,7 @@ img {
 
 @media screen and (min-width: 375px) {
     body {
-        background-image: url('./assets/images/bg-desktop.svg');
+        background-image: url('./images/bg-desktop.svg');
     }
 }
 @media screen and (min-width: 768px) {
