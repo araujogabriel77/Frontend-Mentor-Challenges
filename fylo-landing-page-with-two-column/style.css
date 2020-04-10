@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(243, 87%, 12%);
+}
+li {
+    cursor: pointer;
+    list-style: none;
+}
+button {
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+    transition: background .25s;
+}
+button:hover {
+    background-color: hsl(170, 45%, 43%);
+}
+button, input {
+    border-radius: 4px;
+    border: none;
+    height: 50px;
+    font-size: 16px;
+}
+img {
+    width: 100%;
+}
+nav, button {
+    font-family: 'Raleway', sans-serif;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 20px;
+    font-size: 16px;
+}
+nav img {
+    padding-left: 15px;
+    max-width: 100px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.hero {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .info h1 {
+    margin: 25px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 31px;
+    line-height: 40px;
+}
+.hero .info p {
+    text-align: center;
+    margin: 10px auto;
+    padding: 29px;
+    font-size: 17px;
+}
+
+.hero .info form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hero .info form input {
+    width: 95%;
+    padding: 15px 25px;
+    border: 1px solid;
+    margin:0 auto 20px;
+}
+
+.hero .info form button {
+    width: 95%;
+    border: 1px solid;
+    margin:0 auto 20px;
+}
+
+.fylo-info {
+    width: 100%;
+    display: flex;
+    padding: 0 10px 120px;
+    flex-direction: column;
+    padding-top: 120px;
+    background-position: 50% 21px;
+    background-image: url('./images/bg-curve-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 600% 100%;
+}
+
+.fylo-info img {
+    width: 95%;
+    margin: 0 auto 100px;
+}
+.fylo-info .content h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.fylo-info .content p {
+    margin-bottom: 15px;
+    color: hsl(243, 87%, 12%);
+    font-size: 15px;
+    line-height: 22px;
+}
+.fylo-info .content .link-a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.fylo-info .content .link-a a {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    transition: color .25s;
+}
+.fylo-info .content .link-a a:hover {
+    color: hsl(170, 67%, 57%);
+}
+.fylo-info .content .testimony {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 17px -10px hsl(238, 22%, 44%);
+    padding: 30px;
+}
+.fylo-info .content .testimony img {
+    height: 20px;
+    width: auto;
+    margin-bottom: 10px;
+}
+.fylo-info .content .testimony p {
+    color: hsl(243, 87%, 12%);
+    line-height: 24px;
+}
+.fylo-info .content .testimony .testimony-avatar {
+    display: flex;
+}
+.fylo-info .content .testimony .testimony-avatar img {
+    border-radius: 50%;
+    height: 40px;
+    margin: 0;
+
+}
+.fylo-info .content .testimony .testimony-avatar .person {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.access {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    padding: 75px 15px;
+    text-align: center;
+    color: #fff;
+    background-color: hsl(238, 22%, 44%);
+}
+.access .intro h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.access .intro p {
+    font-weight: lighter;
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.access form {
+    width: 100%;
+}
+.access form input {
+    padding: 15px 25px;
+}
+.access form input, .access form button{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 70px 20px;
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+}
+
+footer .footer-info {
+    display: flex;
+}
+footer .footer-info span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 260px;
+}
+footer #logo-footer {
+    max-width: 160px;
+    margin-bottom: 40px;
+}
+footer .footer-info {
+    display: flex;
+    flex-direction: column;
+}
+footer .ico {
+    max-width: 20px;
+    margin-right: 15px;
+}
+footer .services, footer .footer-info {
+    margin: 15px;
+}
+footer .services ul li {
+    margin: 10px 0;
+}
+footer .socials ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer .socials ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 45px;
+    width: 45px;
+    margin: 0 10px;
+
+    border: 1px solid;
+    border-radius: 100%;
+    transition: all .25s;
+}
+footer .socials ul li i {
+    font-size: 17px;
+}
+footer .socials ul li:hover {
+    background-color: #fff;
+    color: hsl(243, 87%, 12%);
+}
+
+@media screen and (min-width: 620px) {
+    nav img {
+        max-width: 125px;
+    }
+    nav ul li {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+    
+
+    .hero {
+        flex-direction: row;
+    }
+    .hero img {
+        width: 50%;
+        order: 2;
+    }
+    .hero .info {
+        width: 50%;
+    }
+    .hero .info p {
+        text-align: left;
+        padding-left: 0;
+    }
+    .hero .info form {
+        width: 100%;
+        flex-direction: row;
+    }
+    .hero .info form input {
+        width: 58%;
+        margin-right: 2%;
+    }
+    .hero .info form button {
+        width: 40%;
+    }
+    
+
+
+    .fylo-info {
+        flex-direction: row;
+    }
+    .fylo-info img {
+        width: 50%;
+        order: 2;
+    }
+    .fylo-info .content {
+        width: 50%;
+        padding: 0 15px;
+    }
+    .fylo-info .content h2 {
+        text-align: left;
+        font-size: 25px;
+    }
+    .fylo-info .content .testimony {
+        margin-left: 0;
+    }
+    .fylo-info .content .testimony .testimony-avatar img {
+        order: -1;
+    }
+
+
+
+    .access {
+        flex-direction: row;
+    }
+    .access .intro {
+        width: 58%;
+        margin-right: 2%;
+        text-align: left;
+    }
+    .access form {
+        width: 40%;
+    }
+    .access form button {
+        max-width: 300px;
+    }
+
+
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .services {
+        margin: 0;
+        align-self: center;
+    }
+    footer .socials {
+        align-self: center;
+    }
+}

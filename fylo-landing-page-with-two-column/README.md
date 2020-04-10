@@ -1,13 +1,11 @@
-# Frontend Mentor - Huddle landing page with alternating feature blocks
-
+# Frontend Mentor - Fylo landing page with two column layout
 
 ## Live server:
-**https://gabefmc.netlify.com/huddle-landing-page-with-alternating-feature-blocks-master/index.html**
+**https://gabefmc.netlify.com/fylo-landing-page-with-two-column/index.html**
 
-![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
-
 
 ## The challenge
 
