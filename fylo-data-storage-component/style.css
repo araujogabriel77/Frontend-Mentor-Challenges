@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: hsl(229, 57%, 11%);
+}
+body {
+    font-size: 1.4rem;
+    font-family: "Raleway", sans-serif;
+}
+main {
+    background: url("./images/bg-desktop.svg") bottom left no-repeat;
+    width: 100%;
+    padding: 0 10px;
+    min-height: 500px;
+    background-size: 100% 60%;
+    margin: 124px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+main #box-1 {
+    background-color: hsl(228, 56%, 26%);
+    width: 300px;
+    margin-bottom: 70px;
+    padding: 20px 35px;
+    border-radius: 8px 80px 8px 8px;
+}
+
+main #box-1 #logo {
+    margin-bottom: 20px;
+    width: 50%;
+    max-width: 116px;
+}
+
+main #box-1 #icons img {
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+main #box-1 #icons img + img {
+    margin-left: 10px;
+}
+main #box-2 {
+    position: relative;
+    width: 450px;
+    background-color: hsl(228, 56%, 26%);
+    margin-left: 20px;
+    margin-bottom: 67px;
+    border-radius: 8px;
+    padding: 35px;
+}
+main #box-2 #tag {
+    position: absolute;
+    background-color: white;
+    right: 26px;
+    top: -30px;
+
+    padding: 10px 0;
+    width: 140px;
+    border-radius: 8px 8px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #box-2 #tag h1 {
+    margin-right: 10px;
+    color: hsl(229, 57%, 11%);
+}
+main #box-2 #tag p {
+    color: hsl(229, 7%, 55%);
+    font-size: 12px;
+}
+main #box-2 #tag::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -19px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+main #box-2 #loading {
+    width: 100%;
+    margin: 10px 0;
+    background-color: hsl(229, 57%, 11%);
+    height: 16px;
+    border-radius: 25px;
+}
+main #box-2 #loading #bar {
+    width: 81.5%;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+    background: linear-gradient(45deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+main #box-2 #loading #bar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: white;
+}
+main #box-2 #gb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        flex-direction: column;
+        background: url("./images/bg-mobile.svg") no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        padding: 20px;
+        margin: 0;
+    }
+    main #box-1 {
+        width: 96%;
+        margin: 0 auto;
+    }
+    main #box-2 {
+        width: 96%;
+        margin: 50px auto 0;
+    }
+}

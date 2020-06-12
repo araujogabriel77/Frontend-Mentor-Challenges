@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 * {
     margin: 0;
@@ -13,12 +13,30 @@
     --css: #007bff;
     --javascript: yellow;
 }
-h1, h2, h3, h4, h5 {color: #ff0052;}
-html {font-size: 62.5%;}
-body {font-size: 1.6rem;}
-img {width: 100%; max-width: 325px;}
-html, body, pre, code, kbd, samp {
-    font-family: 'Press Start 2P', cursive, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #ff0052;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+img {
+    width: 100%;
+    max-width: 325px;
+}
+html,
+body,
+pre,
+code,
+kbd,
+samp {
+    font-family: "Press Start 2P", cursive, sans-serif;
     cursor: default;
 }
 .wrapper {
@@ -35,7 +53,13 @@ html, body, pre, code, kbd, samp {
     font-size: 2.3rem;
     text-align: center;
 }
-.wrapper header h1 a {color: black;}
+.wrapper header h1 a {
+    color: black;
+    transition: all 0.35s;
+}
+.wrapper header h1 a:hover {
+    color: #ff0052;
+}
 .wrapper .content {
     width: 96%;
     margin: 2.5rem auto;
@@ -60,31 +84,49 @@ html, body, pre, code, kbd, samp {
     min-height: 130px;
     margin: 10px auto;
 }
-.wrapper .content .project .image img {border: 3px solid #ff0052; border-radius: 16px;}
+.wrapper .content .project .image img {
+    border: 3px solid #ff0052;
+    border-radius: 16px;
+}
 
-.wrapper .content .project .info h4 {height: 60px;}
+.wrapper .content .project .info h4 {
+    height: 60px;
+}
 .wrapper .content .project .info .techs {
     display: flex;
     justify-content: start;
 }
 
-.wrapper .content .project .info .buttons .nes-btn {padding: 0; font-size: 1.2rem;}
+.wrapper .content .project .info .buttons .nes-btn {
+    padding: 0;
+    font-size: 1.2rem;
+}
 .level {
     display: block;
     max-width: 200px;
     margin: 10px auto;
     padding: 6px 10px;
     text-align: center;
-    font-size: .9rem;
+    font-size: 0.9rem;
     border-radius: 31px;
     border: 1px solid #9c8b8b;
     color: #fff;
 }
-.newbie {background-color: var(--newbie);}
-.junior {background-color: var(--junior);}
-.intermediate{background-color: var(--intermediate);}
-.advanced {background-color: var(--advanced);}
-.tech-html, .tech-css, .tech-js {
+.newbie {
+    background-color: var(--newbie);
+}
+.junior {
+    background-color: var(--junior);
+}
+.intermediate {
+    background-color: var(--intermediate);
+}
+.advanced {
+    background-color: var(--advanced);
+}
+.tech-html,
+.tech-css,
+.tech-js {
     display: block;
     color: #fff;
     padding: 3px 5px;
@@ -93,11 +135,16 @@ html, body, pre, code, kbd, samp {
     border-radius: 31px;
     margin: 3px 5px;
     border: 1px solid #9c8b8b;
-
 }
-.tech-html {background-color: var(--html);}
-.tech-css {background-color: var(--css);}
-.tech-js {background-color: var(--javascript);}
+.tech-html {
+    background-color: var(--html);
+}
+.tech-css {
+    background-color: var(--css);
+}
+.tech-js {
+    background-color: var(--javascript);
+}
 
 footer {
     width: 100%;
@@ -107,7 +154,8 @@ footer {
     height: 70px;
 
     background-color: #000;
-}footer p {
+}
+footer p {
     font-size: 1.4rem;
     margin: 0 20px;
     color: #ff0052;
@@ -115,11 +163,12 @@ footer {
 footer a {
     padding-top: 20px;
 }
-.nes-icon.is-medium {transform: scale(2);}
-
-
-
+.nes-icon.is-medium {
+    transform: scale(2);
+}
 
 @media screen and (max-width: 400px) {
-    .wrapper .content .project {align-items: center;}
+    .wrapper .content .project {
+        align-items: center;
+    }
 }
