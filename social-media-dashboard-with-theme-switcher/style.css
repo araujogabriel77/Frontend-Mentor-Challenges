@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(232, 19%, 15%) 0,
+    hsl(232, 19%, 15%) 10%,
+    hsl(230, 17%, 14%) 0,
+    hsl(230, 17%, 14%)
+  );
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+
+  color: #fff;
+}
